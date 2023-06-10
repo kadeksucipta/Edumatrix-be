@@ -18,6 +18,8 @@ const galleryRoute = require ("./app/gellery/router")
 const hasilRoute = require ("./app/hasil/router")
 const keunggulanRoute = require ("./app/keunggulan/router")
 const testimoniRoute = require ("./app/testimoni/router")
+const datadaftarRoute = require ("./app/dataDaftar/router")
+const dataulasanRoute = require ("./app/dataUlasan/router")
 
 
 var app = express();
@@ -56,6 +58,8 @@ app.use("/api", galleryRoute)
 app.use("/api", hasilRoute)
 app.use("/api", keunggulanRoute)
 app.use("/api", testimoniRoute)
+app.use("/api", datadaftarRoute)
+app.use("/api", dataulasanRoute)
 
 //home
 app.use("/", function(req, res) {
