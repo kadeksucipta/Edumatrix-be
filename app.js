@@ -20,6 +20,14 @@ const keunggulanRoute = require ("./app/keunggulan/router")
 const testimoniRoute = require ("./app/testimoni/router")
 const datadaftarRoute = require ("./app/dataDaftar/router")
 const dataulasanRoute = require ("./app/dataUlasan/router")
+const bimbelpendidikanRoute = require ("./app/bimbel-pendidikan/router")
+const privatmahasiswaRoute = require ("./app/privat-mahasiswa/router")
+const agamaislamRoute = require ("./app/agama-islam/router")
+const privatKomRoute = require ("./app/privat-kom/router")
+const privatMusikRoute = require ("./app/privat-musik/router")
+const privatUtbkRoute = require ("./app/privat-utbk/router")
+const privatBipaRoute = require ("./app/privat-bipa/router")
+const snbtRoute = require ("./app/kesulitan-snbt/router")
 
 
 var app = express();
@@ -60,6 +68,14 @@ app.use("/api", keunggulanRoute)
 app.use("/api", testimoniRoute)
 app.use("/api", datadaftarRoute)
 app.use("/api", dataulasanRoute)
+app.use("/api", bimbelpendidikanRoute)
+app.use("/api", privatmahasiswaRoute)
+app.use("/api", agamaislamRoute)
+app.use("/api", privatKomRoute)
+app.use("/api", privatMusikRoute)
+app.use("/api", privatUtbkRoute)
+app.use("/api", privatBipaRoute)
+app.use("/api", snbtRoute)
 
 //home
 app.use("/", function(req, res) {
