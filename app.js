@@ -28,6 +28,13 @@ const privatMusikRoute = require ("./app/privat-musik/router")
 const privatUtbkRoute = require ("./app/privat-utbk/router")
 const privatBipaRoute = require ("./app/privat-bipa/router")
 const snbtRoute = require ("./app/kesulitan-snbt/router")
+const ptnFavoritRoute = require ("./app/ptn-favorit/router")
+const umptkinRoute = require ("./app/keunggulan-ptkin/router")
+const storyRoute = require ("./app/success-story/router")
+const fasilitasRoute = require ("./app/fasilitas/router")
+const akmilRoute = require ("./app/bimbel-akmil/router")
+const akpolRoute = require ("./app/bimbel-akpol/router")
+const sekdinRoute = require ("./app/bimbel-sekdin/router")
 
 
 var app = express();
@@ -76,6 +83,13 @@ app.use("/api", privatMusikRoute)
 app.use("/api", privatUtbkRoute)
 app.use("/api", privatBipaRoute)
 app.use("/api", snbtRoute)
+app.use("/api", ptnFavoritRoute)
+app.use("/api", umptkinRoute)
+app.use("/api", storyRoute)
+app.use("/api", fasilitasRoute)
+app.use("/api", akmilRoute)
+app.use("/api", akpolRoute)
+app.use("/api", sekdinRoute)
 
 //home
 app.use("/", function(req, res) {
