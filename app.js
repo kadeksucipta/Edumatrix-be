@@ -35,6 +35,7 @@ const fasilitasRoute = require ("./app/fasilitas/router")
 const akmilRoute = require ("./app/bimbel-akmil/router")
 const akpolRoute = require ("./app/bimbel-akpol/router")
 const sekdinRoute = require ("./app/bimbel-sekdin/router")
+const fasilitasAkmilRoute = require ("./app/fasilitas-akmil/router")
 
 
 var app = express();
@@ -90,6 +91,7 @@ app.use("/api", fasilitasRoute)
 app.use("/api", akmilRoute)
 app.use("/api", akpolRoute)
 app.use("/api", sekdinRoute)
+app.use("/api", fasilitasAkmilRoute)
 
 //home
 app.use("/", function(req, res) {
